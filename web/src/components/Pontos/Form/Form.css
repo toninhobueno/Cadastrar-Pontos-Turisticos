@@ -1,0 +1,44 @@
+.pontos-form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+
+.pontos-form__group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+}
+
+
+.pontos-form__group input {
+  border: 1px solid #AAAAAA;
+  border-radius: 8px;
+  background-color: LightGray;
+  height: 36px;
+  padding: 0 10px;
+}
+
+.pontos-form__group select {
+  border: 1px solid #AAAAAA;
+  border-radius: 8px;
+  background-color: LightGray;
+  height: 40px;
+  width: 50px;
+  position:relative;
+}
+
+textarea {
+  font-family: sans-serif;
+  font-size:10pt;
+  background-color: LightGray;
+  line-height:1.6em;
+  resize: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  
+}
+

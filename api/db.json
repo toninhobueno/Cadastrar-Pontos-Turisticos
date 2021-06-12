@@ -1,0 +1,25 @@
+{
+  "pontos": [
+    {
+      "id": 1,
+      "title": "Cristo Redentor",
+      "locale": "Rio de Janeiro",
+      "imageUrl": "https://marianaviaja.com/wp-content/uploads/2019/09/como-ir-cristo-redentor-rio-de-janeiro-trem-corcovado.jpg",
+      "url": "https://pt.wikipedia.org/wiki/Cristo_Redentor",
+      "description": "O Cristo Redentor é uma escultura em estilo Art Déco, com os braços abertos em forma de uma cruz, com 38 metros de altura, o equivalente a um prédio de 13 andares.",
+      "references": "Pão de Açucar",
+      "UF": "RJ"
+    },
+    {
+      "title": "MASP - Museu de Arte de São Paulo Assis Chateaubriand na Avenida Paulista",
+      "url": "http://www.pulsarimagens.com.br/listing/resultDetail?buscador=&palavra0=&palavra1=&palavra2=&npalavra=&cidade=0&estado=0&regiao=0&pais=0&autor=103&mes=0&ano=&partir=%3D&formato%5Bhorizontal%5D=H&formato%5BVertical%5D=V&video%5Bfhd%5D=1&video%5Bhd%5D=1&video%5Bsd%5D=1&organizar=&IntTypeForm=9&nameNewFolder=0&page=25&addTomboListing=0&postSelectedIdTheme=0&addWord=0&type=foto&idWordKey=0&intFolder=0&codigo=01EV819",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Museu_de_arte_de_S%C3%A3o_Paulo_Assis_Chateaubriand.jpg/800px-Museu_de_arte_de_S%C3%A3o_Paulo_Assis_Chateaubriand.jpg",
+      "UF": "",
+      "description": "O Museu de Arte de São Paulo é um museu privado sem fins lucrativos, fundado em 1947 pelo empresário e mecenas Assis Chateaubriand (1892-1968), tornando-se o primeiro museu moderno no país.",
+      "references": "Av. Paulista, 1578 - Bela Vista, São Paulo - SP, 01310-200",
+      "locale": "São Paulo",
+      "id": 2
+    }
+
+  ]
+}

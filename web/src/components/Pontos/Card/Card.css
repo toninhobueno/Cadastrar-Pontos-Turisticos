@@ -1,0 +1,59 @@
+.pontos-card {
+  border-radius: 8px;
+  border: 1px solid #C3C3C3;
+  box-shadow: 0 2px 7px 0 rgba(0,0,0, 0.15);
+  display: flex;
+  padding: 15px;
+  align-items: flex-start;
+
+}
+
+
+.pontos-card__image {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.pontos-card__title {
+  font-size: 20px;
+  color: #2C3E50;
+}
+
+.pontos-card__locale {
+  font-size: 16px;
+  font-weight: 700;
+  color: #3498DB;
+}
+
+.pontos-card__UF {
+  font-size: 16px;
+  font-weight: 700;
+  color: #3498DB;
+}
+
+.pontos-card__references {
+  font-size: 16px;
+  font-weight: 700;
+  color: #3498DB;
+}
+
+
+.pontos-card__footer {
+  display: flex;
+  align-items: center;
+}
+
+.pontos-card__description {
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+.pontos-card__link {
+  border: 1px solid #3498DB;
+  border-radius: 4px;
+  color: #3498DB;
+  text-decoration: none;
+  padding: 8px 10px;
+}
