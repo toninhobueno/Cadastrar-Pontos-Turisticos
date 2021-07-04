@@ -27,7 +27,8 @@
   background-color: LightGray;
   height: 40px;
   width: 50px;
-  position:relative;
+  display : flex;
+  float : right;
 }
 
 textarea {

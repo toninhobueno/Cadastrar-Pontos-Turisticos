@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import axios from 'axios';
 import './Form.css';
+import useApi from 'components/utils/useApi';
+import axios from 'axios';
 
 const initialValue = {
   title: '',
@@ -12,9 +13,32 @@ const initialValue = {
   references : '',
 }
 
-const PontosForm = () => {
-  const [values, setValues] = useState(initialValue);
+const PontosForm = ({ id }) => {
+  const [values, setValues] = useState(id ? null: initialValue);
   const history = useHistory();
+  const [load] = useApi({
+    url: `/ponto/${id}`,
+    method: 'get',
+    onCompleted: (response) => {
+      setValues(response.data);
+    }
+  });
+
+  const [save, saveInfo] = useApi({
+    url: id ? `/ponto/${id}` : '/ponto',
+    method: id ? 'put' : 'post',
+    onCompleted: (response) => {
+      if (!response.error) {
+        history.push('/');
+      }
+    }
+  })
+
+  useEffect(() => {
+    if (id) {
+      load();
+    }
+  }, [id]);
 
   function onChange(ev) {
     const { name, value } = ev.target;
@@ -25,16 +49,15 @@ const PontosForm = () => {
   function onSubmit(ev) {
     ev.preventDefault();
 
-    axios.post('http://localhost:5000/pontos', values)
-      .then((response) => {
-        history.push('/');
-      });
+    save({
+      data: values,
+    });
   }
 
   return (
     <div>
       <h1>PONTOS TURISTICOS</h1>
-      <h2>Novo ponto </h2>
+      <h2>Novo Ponto </h2>
 
       <form onSubmit={onSubmit}>
 
